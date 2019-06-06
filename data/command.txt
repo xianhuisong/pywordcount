@@ -1,0 +1,4 @@
+hadoop jar hadoop-streaming-2.7.1.jar \
+-file mapper.py     -mapper mapper.py \
+-file reducer.py    -reducer reducer.py \
+-input /data/example/pythontest/*    -output /data/example/pythonout
